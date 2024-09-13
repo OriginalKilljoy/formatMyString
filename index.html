@@ -6,8 +6,9 @@
     <title>My string</title>
 </head>
 <body>
-    <div id="tekst"></div>
-    <button onclick="changeToUpperChar()">Trykk meg</button>
+    <input onchange="saveName(this.value)" type="text">
+    <button onclick="showName()">Submit name</button>
+    <div id="display"></div>
 
     <script src="script.js"></script>
 </body>

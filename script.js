@@ -1,16 +1,19 @@
-//en funkjson som tar en string inn som parameter
-//en funksjon som gjør første bokstaven om til stor bokstav
+//Her lagres navnet
+let userName = '';
 
-
-
-let points = 'julie';
-
-function changeChar(){
-    points.charAt(0).toUpperCase();
-    document.getElementById("points").innerHTML = points;
+//Denne tar imot informasjonen som kommer inn fra input feltet, og lagrer det som userName
+function saveName(input){
+    userName = input;
 }
-console.loh(changeChar);
 
-// let result = myName.charAt(0).toUpperCase();
+//Denne viser frem navnet
+function showName(){
+    userName = firstLetterCapitalize(userName);
+    document.getElementById('display').innerHTML = userName;
+}
 
-// console.log(result);
+//Denne gjør første bokstav stor + viser resten av navnet også i stedet for å fjerne det(slice)
+function firstLetterCapitalize(text){
+    return userName.charAt(0).toUpperCase() + userName.slice(1);
+}
+
