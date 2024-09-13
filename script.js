@@ -1,3 +1,8 @@
+//en funkjson som tar en string inn som parameter
+//en funksjon som gjør første bokstaven om til stor bokstav
+
+
+
 let points = 'julie';
 
 function changeChar(){
